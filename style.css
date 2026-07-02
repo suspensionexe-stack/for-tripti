@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #ffe6e6 0%, #f0e6ff 100%);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: #5c4a4a;
+    overflow: hidden;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeInSmooth 1s forwards ease-in-out;
+}
+
+.doodles {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 15px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ff758c;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff758c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff5e78;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.4);
+}
+
+/* Smooth Page Fade-In */
+@keyframes fadeInSmooth {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Word Animation Classes */
+.word-animate {
+    display: block;
+}
+
+.word {
+    opacity: 0;
+    display: inline-block;
+    margin-right: 5px;
+    transform: translateY(10px);
+}
+
+@keyframes popWord {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
