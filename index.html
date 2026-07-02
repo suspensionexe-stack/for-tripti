@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Tripti 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="your-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Page 1: Welcome -->
+    <div id="page1" class="page active container">
+        <div class="doodles">🌸 🥺 ✨</div>
+        <h1 class="word-animate">Hey Tripti...</h1>
+        <p class="word-animate">I know you haven't been feeling well lately.</p>
+        <p class="word-animate">I made this little space just for you.</p>
+        <button onclick="nextPage('page1', 'page2')">Tap to open 💌</button>
+    </div>
+
+    <!-- Page 2: Emotional Support -->
+    <div id="page2" class="page container">
+        <div class="doodles">🫂 🧸 💖</div>
+        <h1 class="word-animate">You are never alone.</h1>
+        <p class="word-animate">I am right here for you, always.</p>
+        <p class="word-animate">Whenever you feel lonely, or just need a shoulder to lean on, I am just a message or a call away.</p>
+        <p class="word-animate">We will get through this together.</p>
+        <button onclick="nextPage('page2', 'page3')">Next 👉</button>
+    </div>
+
+    <!-- Page 3: Take Care -->
+    <div id="page3" class="page container">
+        <div class="doodles">🍵 🛌 🌼 💊</div>
+        <h1 class="word-animate">Please take care of yourself.</h1>
+        <p class="word-animate">Make sure you are eating well, taking your medicines, and resting completely.</p>
+        <p class="word-animate">Focus on your healing. I can't wait to see your beautiful smile again.</p>
+        <p class="word-animate">Get well soon! 🥰</p>
+        <button onclick="nextPage('page3', 'page1')">Read again 🏠</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
